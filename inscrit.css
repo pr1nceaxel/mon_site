@@ -1,0 +1,143 @@
+header {
+    position: relative;
+    background: linear-gradient(rgb(0, 191, 255), #ffffff);
+    padding: 1em;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.menu li {
+    position: relative; 
+}
+
+.menu li a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    background: linear-gradient(rgb(0, 191, 255), #ffffff);
+}
+
+.menu li a:hover {
+    background: linear-gradient(rgb(0, 140, 186), #ffffff);
+}
+
+.sous-menu {
+    display: none; 
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    background: linear-gradient(rgb(0, 191, 255), #ffffff);
+    width: 150px; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); 
+}
+
+.menu li:hover .sous-menu {
+    display: block;
+}
+
+.menu .sous-menu li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu .sous-menu li a:hover {
+    background: linear-gradient(rgb(0, 140, 186), #ffffff);
+}
+
+
+
+main {
+    font-family: Arial, sans-serif;
+    background-image: url(voy.jpeg);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    background: linear-gradient(rgb(0, 191, 255), #ffffff);
+    padding: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00b321;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient( #ffffff ,rgb(0, 191, 255));
+    padding: 15px;
+   
+}
+
+.bas{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.foot{
+    margin: 20px;
+    
+}
+.foot p,h1{
+    margin: 20px;
+    
+}
